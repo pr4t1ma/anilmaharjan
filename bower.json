@@ -1,0 +1,25 @@
+{
+  "name": "anilmaharjan",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pr4t1ma/anilmaharjan",
+  "authors": [
+    "Pratima <prati.ma@hotmail.com>"
+  ],
+  "description": "homepage for anilmaharjan",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}
