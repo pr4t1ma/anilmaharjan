@@ -1,0 +1,212 @@
+//colors
+$white: #fff;
+$primary-color: #1eb0e9;
+$secondary-color: #ff4e00;
+$highlight-color: #15ab30;
+$light-gray: #dedfd9;
+$dark-gray: #444;
+
+//mixins
+
+//styles
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+a:hover {
+  color: $white;
+}
+
+.underline {
+  width: 0%;
+  height: 2px;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  background: $light-gray;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+
+}
+
+.wrapper {
+  margin-top: 66px;
+
+  h1.WorkItem-title {
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    display: block;
+  }
+  p {
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
+}
+
+button.btn.btn-default {
+  background-color: transparent;
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+  margin-right: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  .white{
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #222;
+    }
+  }
+  .black{
+    border-bottom: 2px #140d1a;
+    color:#222;
+    &:hover{
+      background:#140d1a;
+      color:#fff
+    }
+  }
+
+}
+
+.work-page {
+  background-color: $secondary-color;
+  .header {
+    .navbar {
+      background: none;
+      border: none;
+      padding: 25px 0;
+      ul {
+        li {
+          float: left;
+          padding: 10px 25px;
+          transition: all 0.5s;
+          border-bottom: 2px transparent;
+
+          //        &:hover .underline{
+          //          width:100%;
+          //          background-color:#fff;
+          //        }
+          &:hover {
+            border-bottom: 2px solid #fff;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+  .intro {
+    padding: 50px 0;
+    color: #fff;
+
+    a {
+      margin-top: 30px;
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
+
+.coop-page {
+  background: url(../images/coop-thumb-large.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: 50% 0;
+  color: #fff;
+  padding-top: 50px;
+  height: 90vh;
+  min-height: 500px;
+
+}
+
+.arcini {
+  background: url(../images/arcini-thumb-large.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: 50% 0;
+  color: #fff;
+  padding-top: 50px;
+  height: 90vh;
+  min-height: 500px
+}
+.Johanna{
+  background: url(../images/joy-thumb-large.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: 50% 0;
+  color: #222;
+  padding-top: 50px;
+  height: 90vh;
+  min-height:  611px;
+  .wrapper{
+    margin-top: 100px;
+  }
+}
+
+.Architecture{
+  background: url(../images/arkdes-thumb-large.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 50px;
+  height: 90vh;
+  min-height: 500px;
+  color: #fff;
+}
+
+.Prophet{
+  background: url(../images/prophet-thumb-large.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 50px;
+  height: 90vh;
+  min-height: 500px;
+  color: #140d1a;
+}
+
+.Public{
+  background: url(../images/nordiska-thumb-large.jpg) no-repeat center center ;
+  background-size: cover;
+  padding-top: 50px;
+  height: 90vh;
+  min-height: 500px;
+  color: #fff;
+}
+.footer{
+  background-color: #fff;
+  .wrapper{
+    margin:50px 0
+
+    .footer-text{
+    text-align: center;
+
+    .itemprop{
+      color: #140d1a;
+    }
+  }
+  }
+}
