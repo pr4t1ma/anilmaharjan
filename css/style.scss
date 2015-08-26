@@ -11,19 +11,24 @@ $dark-gray: #444;
 //styles
 ul {
   list-style: none;
-  padding:0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: $white;
+
+  &:hover {
+    color: $white;
+  }
 }
 
-a:hover {
-  color: $white;
+h1,h2,h3{
+  text-shadow: 0 1px 2px #444;
 }
-.align-center{
-  text-align:center;
+
+.align-center {
+  text-align: center;
 }
 
 .underline {
@@ -50,6 +55,14 @@ body {
   line-height: 1.5;
   color: #222;
 
+}
+
+.Sitehead-inner.align-center {
+  font-size: 45px;
+  position: absolute;
+  bottom: 30%;
+  left: 37%;
+  text-shadow: 1px 1px 2px #444;
 }
 
 .wrapper {
@@ -79,7 +92,7 @@ button.btn.btn-default {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
-  .white{
+  .white {
     border: 2px solid #fff;
     color: #fff;
 
@@ -88,12 +101,12 @@ button.btn.btn-default {
       color: #222;
     }
   }
-  .black{
+  .black {
     border-bottom: 2px #140d1a;
-    color:#222;
-    &:hover{
-      background:#140d1a;
-      color:#fff
+    color: #222;
+    &:hover {
+      background: #140d1a;
+      color: #fff
     }
   }
 
@@ -109,7 +122,7 @@ button.btn.btn-default {
         float: left;
         padding: 10px 25px;
         transition: all 0.5s;
-        border-bottom: 2px transparent;
+        border-bottom: 2px solid transparent;
 
         //        &:hover .underline{
         //          width:100%;
@@ -126,6 +139,7 @@ button.btn.btn-default {
 
   }
 }
+
 .work-page {
   background-color: $secondary-color;
 
@@ -161,20 +175,21 @@ button.btn.btn-default {
   height: 90vh;
   min-height: 500px
 }
-.Johanna{
+
+.Johanna {
   background: url(../images/joy-thumb-large.jpg) no-repeat center center;
   background-size: cover;
   background-position: 50% 0;
   color: #222;
   padding-top: 50px;
   height: 90vh;
-  min-height:  611px;
-  .wrapper{
+  min-height: 611px;
+  .wrapper {
     margin-top: 100px;
   }
 }
 
-.Architecture{
+.Architecture {
   background: url(../images/arkdes-thumb-large.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 50px;
@@ -183,7 +198,7 @@ button.btn.btn-default {
   color: #fff;
 }
 
-.Prophet{
+.Prophet {
   background: url(../images/prophet-thumb-large.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 50px;
@@ -192,126 +207,135 @@ button.btn.btn-default {
   color: #140d1a;
 }
 
-.Public{
-  background: url(../images/nordiska-thumb-large.jpg) no-repeat center center ;
+.Public {
+  background: url(../images/nordiska-thumb-large.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 50px;
   height: 90vh;
   min-height: 500px;
   color: #fff;
 }
-.footer{
+
+.footer {
   background-color: #fff;
   border-top: 1px solid #eee;
-  .wrapper{
-    margin:50px 0;
-    .footer-text{
-    text-align: center;
+  .wrapper {
+    margin: 50px 0;
+    .footer-text {
+      text-align: center;
 
-    .itemprop{
-      color: #140d1a;
+      .itemprop {
+        color: #140d1a;
+      }
     }
-  }
   }
 }
 
 //banner css start from here
 
-.banner{
+.banner {
   background: url(../images/2.jpg) no-repeat center center;
   background-size: cover;
-  height: 820px;
-  color:$white ;
+  height: 400px;
+  color: $white;
   position: relative;
-  .header{
-    h1:hover{
+  .header {
+    h1:hover {
       opacity: 0.9px;
     }
-    h2{
+    h2 {
       font-size: 16px;
 
-      &:hover{
-        opacity:0.9;
+      &:hover {
+        opacity: 0.9;
       }
     }
   }
-  .Sitehead-inner.align-center {
-    font-size: 30px;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-  }
+
 
 }
 
 //About page start from here
 
-
 //banner css End from here
-.Site-main{
+.Site-main {
   background-color: $white;
   padding-bottom: 50px;
-  .Site-main-inner{
-    width:70%;
-    margin:0 auto;
-    h1{
+  .Site-main-inner {
+    width: 70%;
+    margin: 0 auto;
+    h1 {
       margin-bottom: 40px;
     }
   }
 }
 
-.library{
-  background-color:$primary-color;
-  padding:50px 0;
+.library {
+  background-color: $primary-color;
+  padding: 50px 0;
   color: $white;
-  h1{
+  h1 {
     font-size: 70px;
   }
-  h2{
+  h2 {
     font-size: 18px;
     opacity: 0.9;
 
   }
 }
 
-
-.job-description{
-  background-color:$white;
-  padding:100px 0;
-  .dis-box{
-    img{
-      float:left;
+.job-description {
+  background-color: $white;
+  padding: 100px 0;
+  .books-wrap{
+    .col-md-6{
+      height: 330px;
+    }
+  }
+  .dis-box {
+    img {
+      float: left;
       margin-right: 20px;
       width: 30%;
       max-width: 100px;
     }
-    h1{
+    h1 {
       font-size: 18px;
     }
   }
 }
 
-.inspiration-list{
+.inspiration-list {
   padding-left: 50px;
-  ul{
-    li{
-      margin: 20px 0;
-      a{
+  ul {
+    li {
+      padding: 20px 0;
+
+
+
+      a {
         color: #222;
         font-size: 20px;
+        padding-bottom: 10px;
+        height: 2px;
+        text-decoration: none;
+        border: 2px solid transparent;
 
+        &:hover{
+          border-bottom: 2px solid #222;
+        }
       }
     }
   }
 }
 
-.web-list{
+.web-list {
   padding-left: 50px;
-  ul{
-    li{
+  ul {
+    li {
       margin: 20px 0;
       font-size: 20px;
-      a{
+      a {
         color: #222;
         font-size: 20px;
       }
@@ -320,21 +344,21 @@ button.btn.btn-default {
 
 }
 
-.aboutSection-foot{
+.aboutSection-foot {
   width: 60%;
   margin: 90px auto;
   font-size: 15px;
   margin-bottom: 0;
 }
 
-.resume{
-  background-color:$primary-color;
-  padding:50px 0;
+.resume {
+  background-color: $primary-color;
+  padding: 50px 0;
   color: $white;
-  h1{
+  h1 {
     font-size: 70px;
   }
-  h2{
+  h2 {
     font-size: 18px;
     opacity: 0.9;
 
@@ -345,40 +369,41 @@ button.btn.btn-default {
   background-color: $white;
   padding: 70px 0;
   border-bottom: 1px solid #eee;
-  span{
+  span {
     color: #ccc;
     margin-left: 10px;
     font-size: 13px;
 
   }
-  button.btn.btn-default.white{
+  button.btn.btn-default.white {
     border: 2px solid $primary-color;
     color: $primary-color;
     font-size: 20px;
-    padding:15px 20px;
+    padding: 15px 20px;
     box-shadow: #00b3ee;
-    span{
-      color: $primary-color ;
+    span {
+      color: $primary-color;
       font-size: 20px;
     }
   }
 }
+
 //About page ends here
 
-.blog{
+.blog {
   background-color: $secondary-color;
-  .banner-blog{
+  .banner-blog {
     background-color: #3e5986;
     background-position: 75% 50%;
     min-height: 450px;
     color: $white;
 
-    .header-left{
-      margin:30px 0;
-      h1{
+    .header-left {
+      margin: 30px 0;
+      h1 {
         font-size: 30px;
       }
-      h2{
+      h2 {
         font-size: 16px;
         margin-top: 0;
       }
@@ -387,18 +412,18 @@ button.btn.btn-default {
   }
 }
 
-.looping{
+.looping {
   background-color: #fff;
 
   .Excerpt-box {
     width: 65%;
     margin: 100px auto;
 
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
 
-    .Excerpt-meta{
+    .Excerpt-meta {
       color: #999;
       margin: 15px 0;
       font-size: 18px;
@@ -406,12 +431,11 @@ button.btn.btn-default {
   }
 }
 
-
-.contact-page{
-
+.contact-page {
 
 }
-.contact-inner{
+
+.contact-inner {
   background-color: $white;
 
   .row.wrapper {
@@ -422,31 +446,31 @@ button.btn.btn-default {
   .contact.social-icon {
     margin: 50px auto;
     background-color: #fff;
-    ul{
-      li{
+    ul {
+      li {
         float: left;
-        padding:10px 20px ;
+        padding: 10px 20px;
         font-size: 60px;
         transition: all .5s;
 
-        &:hover{
+        &:hover {
           transform: scale(1.3);
-          }
-
-        i.fa.fa-linkedin{
-          color:#007bb6 ;
         }
 
-        i.fa.fa-twitter{
-          color:#00aced ;
+        i.fa.fa-linkedin {
+          color: #007bb6;
         }
-        i.fa.fa-envelope{
+
+        i.fa.fa-twitter {
+          color: #00aced;
+        }
+        i.fa.fa-envelope {
           color: #dd4b39;
-        }
         }
       }
     }
-  .form{
+  }
+  .form {
     margin-bottom: 80px;
     .form-group {
       width: 100%;
@@ -456,39 +480,55 @@ button.btn.btn-default {
         width: 50%;
         display: inline-block;
         float: left;
-        padding: 30px 0;
+        padding: 30px 20px;
         border-radius: 0;
       }
-      input#pwd{
+      input#email {
         width: 50%;
         display: inline-block;
         float: left;
-        padding: 30px 0;
+        padding: 30px 20px;
         border-left: none;
         border-radius: 0;
       }
       textarea.form-control {
         border-top: none;
+        border-radius: 0;
+      }
+      ::-webkit-input-placeholder {
+        font-size: 15px;
+      }
+
+      :-moz-placeholder {
+        /* Firefox 18- */
+        font-size: 15px;
+      }
+
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 15px;
+      }
+
+      :-ms-input-placeholder {
+        font-size: 15px;
       }
     }
     .form-btn-wrapper {
-      border: 1px solid #ccc;
       box-sizing: border-box;
       border-top: none;
-      padding:10px;
 
       button.btn.btn-default.white {
-        width: 92%;
+        width: 100%;
         text-align: centter;
-        margin: 10px 20px;
         padding: 17px;
         background-color: $primary-color;
         color: $white;
         text-transform: uppercase;
+        box-sizing: border-box;
         border: 2px solid #007bb6;
       }
     }
   }
 
-  }
+}
 
