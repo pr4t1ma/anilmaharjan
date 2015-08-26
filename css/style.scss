@@ -58,9 +58,9 @@ body {
 }
 
 .Sitehead-inner.align-center {
-  font-size: 45px;
+  font-size: 65px;
   position: absolute;
-  bottom: 30%;
+  bottom: 40%;
   left: 37%;
   text-shadow: 1px 1px 2px #444;
 }
@@ -350,6 +350,22 @@ button.btn.btn-default {
   font-size: 15px;
   margin-bottom: 0;
 }
+.banner-anil{
+  background: url(../images/anil.jpg) no-repeat center center;
+  background-size: cover;
+  height: 640px;
+  color: $white;
+  position: relative;
+  h2{
+    font-size: 16px;
+  }
+
+  .Sitehead-inner.align-center{
+    bottom: 48%;
+    left: 21%;
+    font-size: 71px;
+  }
+}
 
 .resume {
   background-color: $primary-color;
@@ -432,7 +448,13 @@ button.btn.btn-default {
 }
 
 .contact-page {
-
+  .banner{
+    background: url(../images/cont-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    color: $white;
+    position: relative;
+  }
 }
 
 .contact-inner {
